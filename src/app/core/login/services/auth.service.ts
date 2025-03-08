@@ -21,7 +21,7 @@ export class AuthService {
 
   logout(): void {
     localStorage.removeItem(this.AUTH_TOKEN);
-    this.router.navigate(['/login']); 
+   
   }
 
   isAuthenticated(): boolean {

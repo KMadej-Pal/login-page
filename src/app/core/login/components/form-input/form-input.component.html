@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label for="control">{{ label | titlecase }}</label>
+  <input
+    [type]="type"
+    [formControl]="control"
+    class="custom-input" />
+  <div *ngIf="isInvalid" class="error-messages">
+    <small *ngFor="let error of errors" class="error-text">{{ error }}</small>
+  </div>
+</div>

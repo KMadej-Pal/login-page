@@ -1,0 +1,11 @@
+<div *ngIf="userData$ | async as data">
+    <div class="login-header">
+        <button class="custom-button" (click)="logout()">
+            logout
+          </button>
+    </div>
+    <div class="login-data">
+        <span>Fist name -  {{data.firstName}}</span>
+        <span>Last name -  {{data.lastName}}</span>
+    </div>
+</div>
